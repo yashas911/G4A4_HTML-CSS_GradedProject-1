@@ -1,0 +1,114 @@
+<!DOCTYPE html>
+<html>
+
+<head>
+    <title>Lab-Test</title>
+    <link rel="stylesheet" href="form.css">
+</head>
+
+<body>
+    <header>
+        <h2>Lab Test</h2>
+    </header>
+    <form action="">
+        <div class="form">
+            <div class="left">
+                <ol>
+                    <div class="list-elements">
+                        <li>Your Contact Details</li>
+                        <div class="input-group">
+                            <input type="text" title="Name" placeholder="Enter your Name" required />
+                            <input type="number" title="Id" placeholder="Patient Id if exists" />
+                        </div>
+
+                        <div class="input-group">
+                            <input type="number" title="Contact" placeholder="Contact Detail" min="899999999"
+                                max="9999999999" required />
+                            <input type="email" title="Email" placeholder="Email" required />
+                        </div>
+                    </div>
+
+                    <div class="list-elements">
+                        <li>Address</li>
+                        <div class="input-group">
+                            <input type="text" title="h.no" placeholder="H.No" required />
+                            <input type="text" title="street" placeholder="Street" required />
+                        </div>
+                        <div class="input-group">
+                            <input type="text" title="area" placeholder="Area" required />
+                        </div>
+                        <div class="input-group">
+                            <label for="district">District </label>
+                            <select name="district" required>
+                                <option value="">Choose</option>
+                                <option value="Thane">Thane</option>
+                                <option value="Raigad">Raigad</option>
+                                <option value="Mumbai suburban">Mumbai suburban</option>
+                                <option value="Navi-Mumbai">Navi-Mumbai</option>
+                            </select>
+                        </div>
+                    </div>
+                    <div class="list-elements">
+                        <li>Choose Test Type</li>
+                        <h5>Check atleast one box without fail **</h5>
+                        <div class="select-group">
+                            <div class="checkbox-group">
+                                <input type="checkbox" id="cbc" name="chkbox">
+                                <label for="cbc">CBC</label>
+                            </div>
+
+                            <div class="checkbox-group">
+                                <input type="checkbox" id="comp-urine" name="chkbox">
+                                <label for="comp-urine">Complete Urine</label>
+                            </div>
+                            <div class="checkbox-group">
+                                <input type="checkbox" id="lipid-profife" name="chkbox">
+                                <label for="lipid-profife">Lipid Profile</label>
+                            </div>
+                            <div class="checkbox-group">
+                                <input type="checkbox" id="TSH" name="chkbox">
+                                <label for="TSH">Thyroid Stimulating Hormone(TSH)</label>
+                            </div>
+                            <div class="checkbox-group">
+                                <input type="checkbox" id="glucose-test" name="chkbox">
+                                <label for="glucose-test">Glucose Test</label>
+                            </div>
+                        </div>
+                    </div>
+                    <div class="list-elements">
+                        <li>Do you want a hard copy of the report also?</li>
+                        <div class="radio-group">
+                            <input type="radio" id="yes" name="Hardcopy" required>
+                            <label for="no">Yes</label>
+
+                        </div>
+                        <div class="radio-group">
+                            <input type="radio" id="no" name="Hardcopy">
+                            <label for="no">No</label>
+                        </div>
+                    </div>
+                    <div class="list-elements">
+                        <li>Select Your Comfortable Date and Time</li>
+                        <div class="date">
+                            <label for="date">Date</label>
+                            <input type="date" id="date" name="date" required>
+                        </div>
+                        <div class="time">
+                            <label for="time">Time</label>
+                            <input type="time" id="time" name="time" required>
+                        </div>
+
+                    </div>
+                </ol>
+            </div>
+            <div class="right">
+                <img src="Lab-Test\lab-test.jpg" alt="Placeholder Image" />
+            </div>
+        </div>
+        <button type="submit">Submit</button>
+        <button type="reset">Reset</button>
+
+    </form>
+</body>
+
+</html>
